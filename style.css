@@ -98,6 +98,65 @@ header {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px;
+    }
+    .hero-content {
+        max-width: 100%; /* Full width for text */
+    }
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller heading */
+    }
+    .hero-image img {
+        max-width: 100%; /* Full-width image */
+    }
+    .cta-buttons a {
+        margin: 10px 0; /* Add spacing between buttons */
+    }
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-image: url("my-pic/home-back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        background-attachment: scroll; /* Prevent fixed background on smaller screens */
+        background-size: cover; /* Ensure it fits the viewport */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain; /* Show the entire background image */
+        background-position: top center; /* Adjust the focus of the background */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-size: cover; /* Fill the small screen */
+        background-position: center; /* Keep the center focus */
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+
 /* Footer */
 footer {
     text-align: center;
@@ -147,11 +206,11 @@ footer .social-links a:hover {
 
 /* Page Navigator (Breadcrumb) */
 .breadcrumb {
-    background: #f9f9f9;
+    background: #000;
     font-size: 1rem;
     color: #333;
-    margin-left: 30px;
-    border-radius: 5px;
+    padding-left: 30px;
+    
 }
 
 .breadcrumb a {
@@ -165,7 +224,7 @@ footer .social-links a:hover {
 }
 
 .breadcrumb span {
-    color: #333;
+    color:#ffcb47;
 }
 
 /* Additional Styles for Project Page */
@@ -442,12 +501,12 @@ footer .social-links a:hover {
 }
 
 /* Contact Section */
-.contact-section {
+.contact-section-form {
     padding: 50px 20px;
     background: #f4f4f4;
 }
 
-.contact-container {
+.contact-container-form {
     max-width: 800px;
     margin: 0 auto;
     background: #fff;
@@ -457,7 +516,7 @@ footer .social-links a:hover {
     text-align: center;
 }
 
-.contact-container h2 {
+.contact-container-form h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
@@ -762,5 +821,72 @@ footer .social-links a:hover {
 @media (max-width: 768px) {
     .about-card {
         width: 100%;
+    }
+}
+
+/* General Styles */
+.contact-section {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-info, .contact-map {
+    flex: 1 1 calc(50% - 20px); /* Adjust width for responsiveness */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-map h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #ffcb47;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-info, .contact-map {
+        flex: 1 1 100%;
+    }
+
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
     }
 }
