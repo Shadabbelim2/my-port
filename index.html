@@ -9,10 +9,21 @@
 <body>
     <!-- Navbar -->
     <header>
+        <div class="logo">
+            <a href="index.html"><img src="my-pic/sb-logo.jpg" alt="Logo"></a>
+        </div>
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About</a>
+                    <ul class="dropdown-content">
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="core-values.html">Core Values</a></li>
+                    </ul></li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -20,11 +31,13 @@
     </header>
     
     
+    
+    
    
 
 
     <!-- Hero Section -->
-    <section id="home" class="hero" style="background-image: url(my-pic/home-back.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+    <section id="home" class="hero" style="background-image: url(my-pic/home-back.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }">
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Shadab Belim</span></h1>
             <p>
@@ -105,5 +118,8 @@
             <a href="https://github.com/Shadabbelim2">GitHub</a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>

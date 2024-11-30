@@ -9,7 +9,13 @@
 <body>
     <!-- Navbar -->
     <header>
+        <div class="logo">
+            <a href="index.html"><img src="my-pic/sb-logo.jpg" alt="Logo"></a>
+        </div>
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,11 +25,11 @@
         </nav>
     </header>
 
-    <!-- Page Navigator (Breadcrumb) -->
+    
    
 
     <!-- About Section -->
-    <section id="about" class="hero" style="background-image: url(my-pic/about-back.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;" >
+    <section id="about" class="hero" style="background-image: url(my-pic/about-back.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }" >
         <div class="hero-content">
             <h1>About <span class="highlight">Me</span></h1>
             <p>
@@ -109,7 +115,7 @@
             <li><b>GitHub:</b> <a href="https://github.com/Shadabbelim2">GitHub Profile</a></li>
         </ul>
     </section>
-    <section class="cta-section"  style="background-image: url(my-pic/about-full.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; ;">
+    <section class="cta-section" >
         <div class="cta-container" >
             <h2>Ready to Get Started?</h2>
             <p>Contact us today and let’s discuss  how we can help you achieve your goals.</p>
@@ -127,5 +133,6 @@
             <a href="https://github.com/Shadabbelim2">GitHub</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

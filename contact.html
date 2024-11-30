@@ -10,21 +10,27 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!-- Navbar -->
+   <header>
+    <div class="logo">
+        <a href="index.html"><img src="my-pic/sb-logo.jpg" alt="Logo"></a>
+    </div>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger Icon -->
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
     
 
-    <section id="about" class="hero" style="background-image: url(my-pic/about-back.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;" >
+    <section id="about" class="hero" style="background-image: url(my-pic/about-back.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;  @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }" >
         <div class="hero-content">
             <h1>Get in <span class="highlight">Touch</span></h1>
             <p>
@@ -151,6 +157,6 @@
             });
         });
     </script>
-
+ <script src="script.js"></script>
 </body>
 </html>

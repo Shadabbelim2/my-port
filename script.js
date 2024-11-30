@@ -9,4 +9,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('show');
+}
 
