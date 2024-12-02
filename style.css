@@ -203,13 +203,9 @@ header {
     .cta-buttons .btn-secondary {
         padding: 12px 25px;
     }
-
-    .btn-secondary:hover {
-    background: #ffcb47;
-    color: #fff;
-    transform: scale(1.05);
-    border-color: #fff;
-}
+    #home, #about, #project, #contact{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -224,6 +220,13 @@ header {
     .cta-buttons .btn-secondary {
         padding: 10px 20px;
     }
+    
+    #home, #about, #project, #contact{
+        display: none;
+    }
+
+         
+    
 }
 
 
@@ -768,6 +771,8 @@ body {
 
 /* Navbar */
 /* General Header Styles */
+/* Base Header Styles */
+   /* Base Header Styles */
 header {
     display: flex;
     align-items: center;
@@ -791,11 +796,12 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Adjusted gap for less space between links */
 }
 
 .navbar li {
     display: inline;
+    position: relative; /* Needed for dropdowns */
 }
 
 .navbar a {
@@ -803,8 +809,8 @@ header {
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
-    font-size: 16px;
-    transition: color 0.3s;
+    font-size: 20px;
+    transition: color 0.3s, background 0.3s;
 }
 
 .navbar a:hover {
@@ -813,31 +819,72 @@ header {
     border-radius: 5px;
 }
 
-/* .navbar li {
-    position: relative;
-} */
-
-
-
-.dropdown-content {
-    display: none;
+/* Dropdown Menu Styling */
+.dropdown {
+    display: none; /* Hidden by default */
     position: absolute;
-    background-color: #333;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    top: 100%; /* Positioning below the parent item */
+    left: 0;
+    background-color: #444; /* Background color for dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    list-style: none;
+    padding: 5px 0; /* Adjusted padding for less space between dropdown items */
+    margin: 0;
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other elements */
+    min-width: 150px; /* Set minimum width for dropdown */
 }
 
-.dropdown-content li {
-    padding: 10px;
+.dropdown li {
+    padding: 5px 20px; /* Adjusted padding for less space between dropdown items */
 }
 
-.dropdown-content li a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
+.dropdown li a {
+    color: #ffcb47;
+    text-decoration: none;
     display: block;
+    font-size: 18px; /* Adjust font size */
+    transition: color 0.3s, background 0.3s; /* Smooth transitions */
+}
+
+.dropdown li a:hover {
+    color: #fff;
+    background: #ffcb47; /* Highlight on hover */
+    border-radius: 5px;
+}
+
+/* Show dropdown on hover */
+.navbar li:hover .dropdown {
+    display: block; /* Show dropdown when parent is hovered */
+}
+
+/* Add caret (optional) */
+.navbar li > a::after {
+    font-size: 12px;
+    margin-left: 5px;
+    color: #ffcb47;
+}
+
+.navbar li:hover > a::after {
+    color: #fff; /* Change arrow color on hover */
+}
+
+/* Mobile Styling for Dropdown */
+@media (max-width: 768px) {
+    .dropdown {
+        position: static; /* Remove absolute positioning */
+        background-color: grey;
+        box-shadow: none;
+        margin-left: 30px;
+    }
+
+    .dropdown li {
+        padding: 10px 0; /* Increase spacing for touch-friendly UI */
+    }
+
+    .navbar.active .dropdown {
+        display: block; /* Show dropdown in mobile view */
+    }
 }
 
 /* Hamburger Icon (Hidden by Default) */
@@ -872,6 +919,13 @@ header {
         display: block; /* Show the hamburger icon on mobile */
     }
 }
+    
+
+/* Mobile Menu Toggle (JavaScript Functionality) */
+.hamburger.open + .navbar {
+    display: flex; /* Show the navbar when hamburger is clicked */
+}
+
 
 
 /* Hero Section */
