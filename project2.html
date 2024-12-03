@@ -10,7 +10,6 @@
 
 <body>
     <!-- Navbar -->
-    <!-- Navbar -->
     <header>
         <div class="logo">
             <a href="index.html"><img src="my-pic/sb-logo.jpg" alt="Logo"></a>
@@ -21,12 +20,21 @@
             </div>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="about.html">About</a>
+                    <!-- Sub-links added here -->
+                    <ul class="dropdown">
+                        <li><a href="mission.html"> Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="core-values.html">Core Values</a></li>
+                    </ul>
+                </li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <section class="hero" style="background-image: url(my-pic/project2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }">
         <div class="hero-content">

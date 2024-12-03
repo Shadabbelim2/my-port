@@ -6,6 +6,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
 
 </head>
 <body>
@@ -21,12 +22,21 @@
         </div>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="about.html">About</a>
+                <!-- Sub-links added here -->
+                <ul class="dropdown">
+                    <li><a href="mission.html"> Mission</a></li>
+                    <li><a href="vision.html">Vision</a></li>
+                    <li><a href="core-values.html">Core Values</a></li>
+                </ul>
+            </li>
             <li><a href="project.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
+
 
     
 
@@ -40,7 +50,17 @@
             
 
         </div>
-        
+        <div id="lottie-animation" style="width: 500px; height: 500px; margin: 0 auto;"></div>
+
+        <script>
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'my-gif/gif5.json' // Replace with the path of your JSON file
+            });
+        </script>
     </section>
 
     <section class="breadcrumb">

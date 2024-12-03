@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -54,6 +55,17 @@
             </div>
         </div>
        
+        <div id="lottie-animation" style="width: 500px; height: 500px; margin: 0 auto;"></div>
+
+        <script>
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'my-gif/gif3.json' // Replace with the path of your JSON file
+            });
+        </script>
     </section>
     <!-- FAQ Section -->
     <section class="breadcrumb">
@@ -73,6 +85,7 @@
             <a href="contact.html" class="btn-primary">Let's Connect</a>
         </div>
     </div>
+    
 </section>
 
 <!-- Achievements Section -->

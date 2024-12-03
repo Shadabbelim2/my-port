@@ -918,7 +918,7 @@ header {
     .hamburger {
         display: block; /* Show the hamburger icon on mobile */
     }
-}
+
     
 
 /* Mobile Menu Toggle (JavaScript Functionality) */
@@ -926,7 +926,7 @@ header {
     display: flex; /* Show the navbar when hamburger is clicked */
 }
 
-
+} 
 
 /* Hero Section */
 .hero {
@@ -1257,10 +1257,19 @@ footer .social-links a:hover {
     text-align: center;
 }
 
+/* Skills Section */
+.skills-section {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
 .skills-section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: #333;
+    color:#ffcb47;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .skills-container {
@@ -1280,7 +1289,7 @@ footer .social-links a:hover {
     transition: transform 0.3s ease;
 }
 
-.skill-card h3 {
+.skill-card h2 {
     font-size: 1.5rem;
     color: #ffcb47;
     margin-bottom: 10px;
@@ -1292,6 +1301,19 @@ footer .social-links a:hover {
 
 .skill-card:hover {
     transform: scale(1.05);
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Footer Styling */

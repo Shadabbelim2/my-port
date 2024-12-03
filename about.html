@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -18,18 +20,29 @@
             </div>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="about.html">About</a>
+                    <!-- Sub-links added here -->
+                    <ul class="dropdown">
+                        <li><a href="mission.html"> Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="core-values.html">Core Values</a></li>
+                    </ul>
+                </li>
                 <li><a href="project.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
+    
+    
     
    
 
     <!-- About Section -->
     <section id="about" class="hero" style="background-image: url(my-pic/about-back.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }" >
+       
+
         <div class="hero-content">
             <h1>About <span class="highlight">Me</span></h1>
             <p>
@@ -38,6 +51,17 @@
             </p>
 
         </div>
+        <div id="lottie-animation" style="width: 600px; height: 600px; margin: 0 auto;"></div>
+
+        <script>
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'my-gif/gif1.json' // Replace with the path of your JSON file
+            });
+        </script>
         
     </section>
 
