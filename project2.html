@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <!-- Navbar -->
     <header>
         <div class="logo">
             <a href="index.html"><img src="my-pic/sb-logo.jpg" alt="Logo"></a>
@@ -31,12 +30,18 @@
                         <li><a href="core-values.html">Core Values</a></li>
                     </ul>
                 </li>
-                <li><a href="project.html">Projects</a></li>
+                <li><a href="project.html">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="project1.html">Project-1</a></li>
+                        <li><a href="project2.html">Project-2</a></li>
+                        <li><a href="project3.html">Project-3</a></li>
+                    </ul>
+                </li>
+               
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
 
     <section id="project2" class="hero" style="background-image: url(my-pic/project2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }">
         <div class="hero-content">
@@ -57,32 +62,32 @@
     </section>
     <!-- Page Navigator (Breadcrumb) -->
     <section class="breadcrumb">
-        <p><a href="project.html">Home</a> > <span>Project-2</span></p>
+        <p><a href="project.html">Project</a> > <span>Project-2</span></p>
     </section>
     <section class="achievements-section">
         <div class="achievements-container">
             
     
     
-                <h2 style="text-align: center; color:#ffcb47 ;">Text-to-Speech System with Hinglish Accent</h2>
+                <h2 style="text-align: center; color:#ffcb47 ; margin-top: 30px;">Text-to-Speech System with Hinglish Accent</h2>
                 <p><strong>Description:</strong> This project was aimed at developing a Text-to-Speech (TTS) system with a specific focus on generating speech in the Indore accent. The goal was to create a natural-sounding voice output that resonates with the regional dialect and pronunciation style of Indore. While the project successfully implemented a Hinglish-based TTS system, achieving the nuanced Indore accent proved challenging due to certain technical limitations.</p>
            
   
-                <h2 style=" color:#ffcb47 ;"> Key Features:</h2>
+                <h2 style=" color:#ffcb47 ; margin-top: 30px;"> Key Features:</h2>
                 <p><strong>Hinglish Text-to-Speech Conversion: </strong>The system effectively converts text input into Hinglish phonetics, enabling smooth and natural-sounding conversational flow. </p>
                 <p><strong>Language Processing: </strong>The system integrates a language processing layer that interprets and converts various languages (like Hindi and English) into a Hinglish representation. </p>
                 <p><strong>Voice Synthesis</strong>Utilized TTS libraries like Google Text-to-Speech (gTTS) and pyttsx3 for generating realistic voice outputs.</p>
                 
          
 
-                <h2 style=" color:#ffcb47 ;">Challenges with Indore Accent Implementation: </h2>
-                <p><strong>Accent Data Availability:<strong>The lack of a publicly available dataset specific to the Indore accent made it challenging to train a TTS model accurately.</p>
+                <h2 style=" color:#ffcb47 ; margin-top: 30px;">Challenges with Indore Accent Implementation: </h2>
+                <p><strong>Accent Data Availability:</strong>The lack of a publicly available dataset specific to the Indore accent made it challenging to train a TTS model accurately.</p>
                 <p><strong>Dialectical Variations: </strong>Capturing the unique pronunciations, rhythm, and intonations of the Indore accent required advanced speech synthesis techniques and a dataset tailored for linguistic fine-tuning.</p>
            <p><strong>Pre-built Limitations: </strong>Most TTS engines, such as Google TTS or AWS Polly, provide generalized accents (e.g., Indian English or Hindi), which do not support region-specific customizations like the Indore accent.</p>
            <p><strong>Resource Constraints</strong> Developing a custom TTS model for the Indore accent would require significant computational resources, advanced phonetic mapping, and proprietary training datasets.</p>
         
-                <h2 style=" color:#ffcb47 ;">Technologies Used: </h2>
-                <p><strong>Python Libraries:<strong> Used gTTS, pyttsx3, and SpeechRecognition for voice synthesis and text processing.</p>
+                <h2 style=" color:#ffcb47 ; margin-top: 30px;">Technologies Used: </h2>
+                <p><strong>Python Libraries:</strong> Used gTTS, pyttsx3, and SpeechRecognition for voice synthesis and text processing.</p>
                 <p><strong>Phonetic Conversion:</strong> Applied custom logic for converting text into Hinglish phonetics.</p>
            <p><strong>Integration:</strong>Developed a standalone application with an easy-to-use interface for generating Hinglish TTS outputs.</p>
            <p><strong>Impact:</strong>Although the specific Indore accent could not be achieved due to data and resource limitations, the project delivered a Hinglish TTS system that provides clear, conversational voice output. This project highlights the importance of linguistic and cultural nuances in TTS systems and sets the foundation for future work on regional accent synthesis.</p>

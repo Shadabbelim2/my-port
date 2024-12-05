@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="my-pic/sb-logo.jpg" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html">About</a>
+                    <!-- Sub-links added here -->
+                    <ul class="dropdown">
+                        <li><a href="mission.html"> Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="core-values.html">Core Values</a></li>
+                    </ul>
+                </li>
+                <li><a href="project.html">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="project1.html">Project-1</a></li>
+                        <li><a href="project2.html">Project-2</a></li>
+                        <li><a href="project3.html">Project-3</a></li>
+                    </ul>
+                </li>
+               
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="project2" class="hero" style="background-image: url(my-pic/project3.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }">
+        <div class="hero-content" style="color: black;">
+            <h1>Our <span class="highlight">Projects</span></h1>
+            <p>Explore the amazing projects we have worked on and the impact they have made in various industries.</p>
+        </div>
+        <div id="lottie-animation" style="width: 400px; height: 400px; margin: 0 auto;"></div>
+
+        <script>
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'my-gif/gif11.json' // Replace with the path of your JSON file
+            });
+        </script>
+    </section>
+    <!-- Page Navigator (Breadcrumb) -->
+    <section class="breadcrumb">
+        <p><a href="project.html">Project</a> > <span>Project-3</span></p>
+    </section>
+    <section class="project-achievements">
+        <div class="achievements-wrapper">
+    
+            <h2 class="section-title">Full-Fledged E-Commerce Platform</h2>
+            <p class="description"><strong>Description:</strong> This project involved the development of a comprehensive e-commerce platform that offers a secure, seamless, and engaging shopping experience. Designed with user-friendliness in mind, the platform caters to diverse customer needs, providing advanced features for smooth navigation, product discovery, and purchasing. A focus on security and performance ensured a reliable and efficient platform for both buyers and sellers.</p>
+    
+            <h2 class="section-subtitle">Key Features</h2>
+            <ul class="feature-list">
+                <li><strong>Product Browsing:</strong> A visually appealing interface with advanced filtering and search capabilities for easy product discovery.</li>
+                <li><strong>Secure Payment Gateway Integration:</strong> Supports multiple payment options with encryption for safe and secure transactions.</li>
+                <li><strong>Responsive Design:</strong> The platform is optimized for both mobile and desktop, ensuring a consistent user experience across all devices.</li>
+                <li><strong>Order Management:</strong> Includes features like cart functionality, order tracking, and invoice generation for a hassle-free shopping experience.</li>
+                <li><strong>Personalized Recommendations:</strong> Utilized AI-based algorithms to suggest relevant products, enhancing user engagement.</li>
+                <li><strong>Multi-language Support:</strong> Enabled broader accessibility with support for multiple languages to cater to diverse audiences.</li>
+            </ul>
+    
+            <h2 class="section-subtitle">Challenges Encountered</h2>
+            <ul class="challenge-list">
+                <li><strong>Scalability:</strong> Ensuring the platform could handle a growing user base and increasing traffic without performance issues.</li>
+                <li><strong>Security:</strong> Implementing robust measures to safeguard user data and protect against cyber threats was a top priority.</li>
+                <li><strong>User Retention:</strong> Developing features to engage users and encourage repeat visits required extensive testing and user feedback.</li>
+                <li><strong>Integration Complexity:</strong> Seamlessly integrating third-party payment gateways and APIs without compromising performance.</li>
+            </ul>
+    
+            <h2 class="section-subtitle">Technologies Used</h2>
+            <ul class="tech-list">
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, ReactJS for building an intuitive and responsive user interface.</li>
+                <li><strong>Backend:</strong> Node.js, Express.js, and MongoDB for efficient server-side operations and database management.</li>
+                <li><strong>Payment Gateway:</strong> Integrated third-party services like PayPal, Stripe, and Razorpay for secure payments.</li>
+                <li><strong>Cloud Hosting:</strong> Deployed the platform using AWS for scalability, performance, and uptime.</li>
+            </ul>
+    
+            <h2 class="section-subtitle">Impact</h2>
+            <ul class="impact-list">
+                <li><strong>Enhanced Shopping Experience:</strong> The platform provided a smooth, engaging experience for users, driving customer satisfaction and loyalty.</li>
+                <li><strong>Business Growth:</strong> Enabled businesses to reach a wider audience, increase sales, and establish a strong online presence.</li>
+                <li><strong>Foundation for Future Enhancements:</strong> The platform's scalable architecture sets the groundwork for adding advanced features like AI-based chatbots, voice-assisted shopping, and augmented reality product previews.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="cta-section" >
+        <div class="cta-container" >
+            <h2>Ready to Get Started?</h2>
+            <p>Contact us today and let’s discuss  how we can help you achieve your goals.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn-secondary"s>Get in Touch</a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Shadab Belim. Designed with ❤️</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shadabbelim/">LinkedIn</a>
+            <a href="https://github.com/Shadabbelim2">GitHub</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
