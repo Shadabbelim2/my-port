@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-chatbot.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="my-pic/sb-logo.jpg" alt="Logo"></a>
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="about.html">About</a>
+                    <!-- Sub-links added here -->
+                    <ul class="dropdown">
+                        <li><a href="mission.html"> Mission</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="core-values.html">Core Values</a></li>
+                    </ul>
+                </li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="core-values" class="hero" style="background-image: url(my-pic/core-value.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+        <div class="hero-content">
+            <h1>Our <span class="highlight">Core Values</span></h1>
+            <p>Our core values reflect our commitment to excellence, ethics, and empowerment, guiding our mission to create a positive impact in every sphere we operate.</p>
+        </div>
+        
+        <div id="lottie-animation" style="width: 500px; height: 500px; margin: 0 auto;"></div>
+    
+        <script>
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'my-gif/gif8.json' // Replace with the path of your JSON file
+            });
+        </script>
+    </section>
+    
+    <section class="breadcrumb">
+        <p><a href="about.html">About Us</a> > <span>Core-Values</span></p>
+    </section>
+
+<section class="core-values-section">
+    <div class="container">
+        <h2>Core Values</h2>
+        <p>
+            Our core values serve as the guiding principles that shape our identity, decisions, and actions. These values are deeply ingrained in our culture and drive us toward our vision and mission.
+        </p>
+
+        <div class="core-value">
+            <h3>1. Integrity</h3>
+            <p>We believe that honesty and transparency are the cornerstones of trust. Integrity is not just a value but a commitment to uphold ethical standards in every decision and action, fostering credibility and trust with our stakeholders.</p>
+            <blockquote>"Do the right thing, even when no one is watching."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>2. Excellence</h3>
+            <p>We strive for nothing short of excellence in everything we do. From delivering quality services to ensuring customer satisfaction, we push boundaries to achieve outstanding results.</p>
+            <ul>
+                <li>Focused on continuous learning.</li>
+                <li>Encouraging innovation and creativity.</li>
+            </ul>
+            <blockquote>"Excellence is not an act but a habit."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>3. Respect for Diversity</h3>
+            <p>We celebrate differences and believe in the power of diversity to create a thriving environment. Inclusion and respect are at the core of our team culture.</p>
+            <ul>
+                <li>Creating a welcoming environment for all.</li>
+                <li>Encouraging different perspectives to solve problems.</li>
+            </ul>
+            <blockquote>"Strength lies in differences, not in similarities."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>4. Innovation & Creativity</h3>
+            <p>Innovation is the driving force behind everything we do. By challenging conventions and exploring new ideas, we aim to deliver transformative solutions.</p>
+            <ul>
+                <li>Leveraging technology for positive impact.</li>
+                <li>Embracing change as an opportunity for growth.</li>
+            </ul>
+            <blockquote>"Innovation distinguishes between a leader and a follower."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>5. Empowerment</h3>
+            <p>We believe in empowering individuals to achieve their fullest potential. By providing the right tools, knowledge, and support, we enable others to take ownership of their goals.</p>
+            <ul>
+                <li>Encouraging leadership at every level.</li>
+                <li>Providing opportunities for growth and development.</li>
+            </ul>
+            <blockquote>"Empowerment is the key to unlocking potential."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>6. Sustainability</h3>
+            <p>Our responsibility extends beyond our business goals. We are committed to creating a sustainable future by prioritizing environmentally and socially responsible practices.</p>
+            <ul>
+                <li>Promoting eco-friendly initiatives.</li>
+                <li>Creating long-lasting positive change in communities.</li>
+            </ul>
+            <blockquote>"Leave the world better than you found it."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>7. Collaboration</h3>
+            <p>Collaboration is at the heart of our success. We work closely with our partners, clients, and communities to achieve common goals and make a meaningful impact.</p>
+            <ul>
+                <li>Encouraging teamwork and open communication.</li>
+                <li>Building relationships based on trust and mutual respect.</li>
+            </ul>
+            <blockquote>"Together, we can achieve more."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>8. Accountability</h3>
+            <p>We take responsibility for our actions and deliver on our commitments. Accountability ensures that we remain dependable and trustworthy in all our endeavors.</p>
+            <ul>
+                <li>Owning up to challenges and learning from them.</li>
+                <li>Delivering results with integrity and dedication.</li>
+            </ul>
+            <blockquote>"Accountability breeds responsibility."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>9. Empathy & Compassion</h3>
+            <p>We prioritize understanding and addressing the needs of our clients, employees, and communities. Compassion fuels our drive to create solutions that truly make a difference.</p>
+            <ul>
+                <li>Fostering meaningful connections.</li>
+                <li>Offering support where it’s needed the most.</li>
+            </ul>
+            <blockquote>"Empathy is the bridge to understanding and action."</blockquote>
+        </div>
+
+        <div class="core-value">
+            <h3>10. Adaptability</h3>
+            <p>In a rapidly changing world, adaptability is key to staying relevant and competitive. We are flexible, resilient, and ready to face challenges head-on.</p>
+            <ul>
+                <li>Welcoming change as an opportunity to grow.</li>
+                <li>Staying ahead in dynamic environments.</li>
+            </ul>
+            <blockquote>"It is not the strongest or the most intelligent who will survive but those who can best manage change."</blockquote>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-container" >
+        <h2>Ready to Get Started?</h2>
+        <p>Contact us today and let’s discuss  how we can help you achieve your goals.</p>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn-secondary"s>Get in Touch</a>
+        </div>
+        
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Shadab Belim. Designed with ❤️</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/shadabbelim/">LinkedIn</a>
+            <a href="https://github.com/Shadabbelim2">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

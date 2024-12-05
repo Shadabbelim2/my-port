@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
 </head>
 
 <body>
@@ -40,15 +41,26 @@
 
 
     
-    <section class="hero" style="background-image: url(my-pic/project1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }">
+    <section id="project1" class="hero" style="background-image: url(my-pic/project1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; @media (max-width: 768px) { background-size: 100%; background-attachment: scroll  ; }">
         <div class="hero-content">
             <h1>Our <span class="highlight">Projects</span></h1>
             <p>Explore the amazing projects we have worked on and the impact they have made in various industries.</p>
         </div>
+        <div id="lottie-animation" style="width: 500px; height: 500px; margin: 0 auto;"></div>
+
+        <script>
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: 'my-gif/gif10.json' // Replace with the path of your JSON file
+            });
+        </script>
     </section>
     <!-- Page Navigator (Breadcrumb) -->
     <section class="breadcrumb">
-        <p><a href="index.html">Home</a> > <span>About</span></p>
+        <p><a href="project.html">Project</a> > <span>Project-1</span></p>
     </section>
     <section class="achievements-section">
         <div class="achievements-container">
