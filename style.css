@@ -257,6 +257,13 @@ header {
     .cta-buttons .btn-secondary {
         padding: 12px 25px;
     }
+    .btn-secondary:hover {
+        background: #ffcb47;
+        color: #fff;
+        transform: scale(1.05);
+        border-color: #fff;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -1412,3 +1419,320 @@ ul li {
 
   
 }
+
+/* Services Section Styles */
+#services {
+    background-image: url(my-pic/home-back-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+   
+  }
+  
+  #services h2 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    color: #ffcb47;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Service Card Container */
+  .service {
+    margin: 20px auto;
+    max-width: 70%; /* Box size defined */
+    background: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Gradient Border Effect */
+  .service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  .service:hover::before {
+    opacity: 1;
+  }
+  
+  .service h3 {
+    font-size: 1.8em;
+    color: #ffcb47;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .service p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .service:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #services {
+      padding: 30px 10px;
+      background-image: none; /* Removed background image for mobile */
+      background-color: #ffffff; /* Set background color to white for mobile */
+    }
+  
+    #services h2 {
+      font-size: 2.2em;
+    }
+  
+    .service {
+      max-width: 80%; /* Box size defined */
+      margin: 15px auto;
+      padding: 20px;
+    }
+  
+    .service h3 {
+      font-size: 1.6em;
+    }
+  
+    .service p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #services h2 {
+      font-size: 1.8em;
+    }
+  
+    .service h3 {
+      font-size: 1.4em;
+    }
+  
+    .service p {
+      font-size: 0.9em;
+    }
+  }
+  
+ /* Home Section */
+.home-section {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto; /* Added top and bottom margin */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #212121;
+  }
+  /* Media Section (Left) */
+  .media-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+  }
+  
+  .media-section img, .media-section video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 12px 0 0 12px;
+  }
+  
+  /* Content Section (Right) */
+  .content-section {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: #fff;
+    background-color: #212121; /* Consistent background with left side */
+  }
+  
+  .content-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcb47;
+  }
+  
+  .content-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .home-section {
+      flex-direction: column; /* Stack the sections vertically on smaller screens */
+    }
+  
+    .media-section, .content-section {
+      flex: none;
+      width: 100%;
+    }
+  
+    .media-section img, .media-section video {
+      max-width: 100%;
+      border-radius: 12px; /* Remove left side rounding for full-width images/videos */
+    }
+  
+    .content-section {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .content-section h1 {
+      font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+  
+    .content-section p {
+      font-size: 1rem; /* Adjust paragraph font size for readability */
+    }
+  
+    .content-section a {
+      font-size: 1rem; /* Adjust the button font size */
+      padding: 10px 15px;
+    }
+  }
+  
+  /* For very small screens (below 480px) */
+  @media (max-width: 480px) {
+    .content-section h1 {
+      font-size: 1.8rem; /* Slightly smaller heading font */
+    }
+  
+    .content-section p {
+      font-size: 0.9rem; /* Smaller paragraph font */
+    }
+  
+    .content-section a {
+      font-size: 0.9rem; /* Adjust button size for smaller screens */
+      padding: 8px 12px;
+    }
+  }
+  
+  /* General Styles */
+#process {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  #process h2 {
+    font-size: 2.8em;
+    color: #ffcb47;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  #process p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ol li {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .step {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .step h3 {
+    font-size: 1.6em;
+    color: #ffcb47;
+    margin-bottom: 15px;
+  }
+  
+  .step p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Hover Effect */
+  .step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px #ffcb47;
+    background-color: #e9f5ff;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    #process h2 {
+      font-size: 2.4em;
+    }
+  
+    #process p {
+      font-size: 1.1em;
+    }
+  
+    .step h3 {
+      font-size: 1.4em;
+    }
+  
+    .step p {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #process h2 {
+      font-size: 2em;
+    }
+  
+    .step h3 {
+      font-size: 1.3em;
+    }
+  
+    .step p {
+      font-size: 0.95em;
+    }
+  }
+  
+  
+  
+ 
+  
+  
